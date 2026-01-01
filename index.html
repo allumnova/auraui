@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="background-blobs">
         <div class="blob orange"></div>
@@ -70,9 +74,37 @@
                         <li>✓ 24/7 Support</li>
                     </ul>
                     <button class="btn-full">Choose Plan</button>
+                    <button class="copy-btn mt-4" data-target="pricing-css">Copy CSS</button>
+                </div>
+            </div>
+
+            <!-- New Button Component -->
+            <div class="glass-card">
+                <div class="card-content flex flex-col items-center">
+                    <h3 class="mb-4">Glass Buttons</h3>
+                    <div class="flex gap-4 mb-6">
+                        <button class="btn-primary">Primary</button>
+                        <button class="btn-secondary">Secondary</button>
+                    </div>
+                    <button class="copy-btn" data-target="button-css">Copy CSS</button>
+                </div>
+            </div>
+
+            <!-- New Input Component -->
+            <div class="glass-card">
+                <div class="card-content">
+                    <h3>Glass Inputs</h3>
+                    <div class="space-y-4 mb-6">
+                        <input type="text" class="glass-input w-full" placeholder="Type something...">
+                        <input type="password" class="glass-input w-full" placeholder="Enter password">
+                    </div>
+                    <button class="copy-btn" data-target="input-css">Copy CSS</button>
                 </div>
             </div>
         </section>
+
+        <!-- Notification Toast -->
+        <div id="toast" class="toast hidden">Copied to clipboard!</div>
 
         <section class="code-preview glass-card">
             <h3>How to Use</h3>
@@ -94,4 +126,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
